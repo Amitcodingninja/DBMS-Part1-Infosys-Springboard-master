@@ -1,0 +1,17 @@
+SELECT
+    Sid,
+    Sname,
+    Location
+FROM
+    Salesman
+WHERE
+    Sname LIKE '%e%' AND Location LIKE '%o%'
+UNION ALL
+SELECT
+    Sid,
+    Sname,
+    Location
+FROM
+    Salesman
+WHERE
+    Sname LIKE '%a%' AND Location LIKE '%a%';

@@ -1,0 +1,9 @@
+SELECT DISTINCT
+    ProdId,
+    Pdesc,
+    Category,
+    Discount
+FROM
+    Product
+WHERE
+    Discount < 10 OR Category = 'Sports';

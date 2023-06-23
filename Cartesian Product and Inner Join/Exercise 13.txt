@@ -1,0 +1,11 @@
+SELECT
+    E.Id,
+    E.Ename,
+    E.Compid,
+    C.Make
+FROM
+    Employee E
+JOIN
+    Computer C ON E.Compid = C.Compid
+WHERE
+    C.Model IN ('Precision', 'Edge');

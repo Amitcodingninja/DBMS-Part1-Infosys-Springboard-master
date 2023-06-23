@@ -1,0 +1,10 @@
+SELECT
+    E.Id,
+    E.Ename,
+    E.Dept,
+    C.Compid,
+    C.Make
+FROM
+    Employee E
+JOIN
+    Computer C ON E.Compid = C.Compid;

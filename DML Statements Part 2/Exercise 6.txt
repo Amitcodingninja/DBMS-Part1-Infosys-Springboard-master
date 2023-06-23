@@ -1,0 +1,1 @@
+DELETE FROM Saledetail WHERE Saleid = 1004;

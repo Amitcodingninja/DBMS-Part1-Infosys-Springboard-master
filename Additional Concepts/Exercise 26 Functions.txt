@@ -1,0 +1,1 @@
+SELECT COALESCE(Pdesc, 'No Description') AS ProductDescription, Discount FROM Product;

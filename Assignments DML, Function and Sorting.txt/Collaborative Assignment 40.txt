@@ -1,0 +1,12 @@
+SELECT DISTINCT
+    Itemtype,
+    CASE
+        WHEN Price BETWEEN 0 AND 499 THEN 'Cheap'
+        WHEN Price BETWEEN 500 AND 1999 THEN 'Affordable'
+        WHEN Price BETWEEN 2000 AND 4999 THEN 'Expensive'
+        WHEN Price >= 5000 THEN 'Very Expensive'
+    END AS Classification
+FROM
+    Item
+ORDER BY
+    Itemtype ASC, Classification ASC;

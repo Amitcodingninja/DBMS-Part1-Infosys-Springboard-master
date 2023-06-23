@@ -1,0 +1,10 @@
+SELECT
+    SD.Prodid,
+    SUM(SD.Quantity) AS TotalQuantity
+FROM
+    Saledetail SD
+GROUP BY
+    SD.Prodid
+HAVING
+    COUNT(DISTINCT SD.Saleid) > 1
+    AND SUM(SD.Quantity) > 1;

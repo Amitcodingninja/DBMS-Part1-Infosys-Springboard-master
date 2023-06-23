@@ -1,0 +1,13 @@
+SELECT
+    'S' AS TYPE,
+    Sid AS ID,
+    Sname AS DETAILS
+FROM
+    Salesman
+UNION ALL
+SELECT
+    'P' AS TYPE,
+    Prodid AS ID,
+    Category AS DETAILS
+FROM
+    Product;
